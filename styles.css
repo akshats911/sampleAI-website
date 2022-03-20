@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Electrolize&family=Playfair+Display:wght@500&family=Source+Sans+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bg{
+    background: #000000;
+}
+
+.banner{
+    background: url(./media/blackjelly.jpg);
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    position: relative;
+    padding: 180px;
+}
+
+.banner.container{
+    z-index: 50;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition: all 1s ease-in-out;
+} 
+
+/* nav .container{ */
+    /* border-bottom: 1px solid white;
+    padding-bottom: 2px; */
+/* } */
+
+.shrink.bg-light{
+    background-color: rgb(255, 255, 255) !important;
+    height: 72px;
+    box-shadow: 1px 2px 4px 0px #00000075 !important;
+    transition: all 0.3s ease-in;
+
+}  
+
+/* .shrink nav .container{
+    border: none !important;
+    padding-bottom: 2px;
+} */
+
+.bg-light {
+    --bs-bg-opacity: 1;
+    height: 68px;
+    background-color: transparent !important;
+    transition: all 0.3s ease-in;
+}
+
+nav .vitlogo{
+    width: 100px;
+    transition: all 1s ease-in-out;
+}
+.shrink .vitlogo{
+}
+
+/* NAV LINK STYLING */
+
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    font-size: medium;
+    transition: all 0.1s ease-in;
+}
+.navbar-dark .navbar-nav .nav-link.active{
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    font-size: medium;
+    transition: all 0.1s ease-in;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover, .navbar-dark .navbar-nav .nav-link:active, .navbar-dark .navbar-nav .nav-link:focus{
+    color: white;
+    text-shadow: 0 0 10px #fff,
+    0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff, 0 0 10px #fff;
+}
+
+.shrink .navbar-nav .nav-link{
+    color: black;
+    font-family: 'Electrolize', sans-serif;
+    font-size: medium;
+    transition: all 0.1s ease-in;
+}
+.shrink .navbar-nav .nav-link.active{
+    color: black;
+    font-family: 'Electrolize', sans-serif;
+    font-size: medium;
+    transition: all 0.1s ease-in;
+}
+
+.shrink .navbar-nav .nav-link:hover, .shrink .navbar-nav .nav-link:active, .shrink .navbar-nav .nav-link:focus{
+    color: black;
+    font-size: 1.09rem;
+}
+
+
+/* --------------------------------  */
+
+.banner .container .left .heading{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin: 0 0 24px;
+}
+
+.banner .container .left .heading span{
+    font-size: 90px;
+    background: radial-gradient(#ff0000, rgb(23, 39, 180));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.banner .container .left p{
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+
+}
+
+.about-us{
+    background: linear-gradient(to right, #000000 0%, #000000 30%, #220b38 30%, #220b38 100%);
+}
+
+.about-us .about .container.right{
+    color: white;
+}
+
+.about-us .about .container.right h2{
+    font-family: 'Electrolize', sans-serif;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3rem;
+}
+
+.about-us .about .container.right{
+    font-family: 'Electrolize', sans-serif;
+}
+
+.about-us .about .container.left{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.about-us .about .container.left img{
+    transform: translateX(-80px);
+}
+
+.core-team{
+    background: black;
+}
+
+.card{
+    color: white;
+    /* background-image: url(./media/sounth.jpg); */
+    background-size: cover;
+    padding: 8rem 0 0;
+    max-width: 25ch;
+    height: 23rem;
+    min-width: 334px;
+    flex-wrap: wrap;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    transition: transform 300ms ease-in-out;
+}
+
+.card.card-1{
+    background-image: url(./media/sounth.jpg);
+}
+.card.card-2{
+    background-image: url(./media/balaji.jpg);
+}
+.card.card-3{
+    background-image: url(./media/mayuri.jpg);
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card-content{
+    --padding: 1.5rem;
+    padding: var(--padding);
+    background: linear-gradient(rgba(0, 0, 0, 0) 20%,rgba(0, 0, 0, 0.384) 40%, rgb(0, 0, 0));
+    /* transform: translateY(60%);
+    transition: transform 0.4s ease-in-out; */
+}
+
+.card-content .button{
+    text-decoration: none;
+}
+
+.card-title{
+    position: relative;
+    width: max-content;
+}
+
+.card-title::after{
+    content: "";
+    position: absolute;
+    height: 4px;
+    left: calc(var(--padding) * -1);
+    width: 100%;
+    background: #220b38;
+    left: 0;
+    bottom: -10%;
+    /* transform: scaleX(0); */
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    
+}
+
+.card:hover .card-title::after{
+    transform: scaleX(1);
+}
+
+.card-content img{
+    width: 30px;
+    transition: all 0.2s ease-in;
+    filter: grayscale();
+}
+.card-content .socials #one:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+}
+.card-content .socials #two:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+}
+.card-content .socials #three:hover{
+    cursor: pointer;
+    filter: grayscale(0);
+}
+
+@media (hover){
+    .card-content{
+        transform: translateY(70%);
+        transition: transform 0.4s ease-in-out;
+    }
+    .card:hover .card-content{ 
+        transform: translateY(0);
+        transition-delay: 0.1s;
+    }
+    .card-title::after{
+    transform: scaleX(0);
+    }
+
+}
+
+.team-heading h2{
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 2.3rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    /* margin-bottom: 2.5rem; */
+}
+
+.sponsorship{
+    background: #220b38;
+}
+
+.sponsors .top h2{
+    color: white;
+    font-family: 'Electrolize', sans-serif;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.sponsors .bottom .owl-carousel .item img{
+    width:300px;
+    /* aspect-ratio: 16/9; */
+}
+
+.bg-dark {
+    --bs-bg-opacity: 1;
+    background-color: black!important;
+}
+
+.social img{
+    color: white;
+    width: 20px;
+}
